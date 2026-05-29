@@ -1,0 +1,45 @@
+{
+  "name": "openclaw-enhanced",
+  "version": "0.1.0",
+  "description": "OpenClaw 增强版 — 三档深度思考、22引擎管线增强、模型质量追踪、功能门控，一键安装基于 openclaw-cn",
+  "keywords": [
+    "openclaw",
+    "enhanced",
+    "ai-assistant",
+    "deep-thinking",
+    "gateway",
+    "whatsapp"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiulingyun/openclaw-enhanced"
+  },
+  "bin": {
+    "openclaw-enhanced": "dist/enhanced-entry.js"
+  },
+  "type": "module",
+  "main": "dist/enhanced-entry.js",
+  "files": [
+    "dist/",
+    "skills/",
+    "config/",
+    "install.sh",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "peerDependencies": {
+    "openclaw-cn": ">=0.2.0"
+  },
+  "scripts": {
+    "install": "bash install.sh",
+    "postinstall": "echo '✅ openclaw-enhanced 安装完成。运行: openclaw-enhanced'",
+    "start": "node dist/enhanced-entry.js",
+    "gateway": "node dist/enhanced-entry.js gateway",
+    "test": "node dist/enhanced-entry.js --doctor"
+  },
+  "enhancedVersion": "0.1.0"
+}
