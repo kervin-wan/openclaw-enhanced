@@ -1,7 +1,7 @@
 {
   "name": "openclaw-enhanced",
   "version": "0.1.0",
-  "description": "OpenClaw 增强版 — 三档深度思考、22引擎管线增强、模型质量追踪、功能门控，一键安装基于 openclaw-cn",
+  "description": "OpenClaw 增强版 — 三档深度思考、22引擎管线增强、模型质量追踪、功能门控，一键安装基于 openclaw",
   "keywords": [
     "openclaw",
     "enhanced",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jiulingyun/openclaw-enhanced"
+    "url": "https://github.com/kervin-wan/openclaw-enhanced"
   },
   "bin": {
     "openclaw-enhanced": "dist/enhanced-entry.js"
@@ -32,7 +32,7 @@
     "node": ">=22.12.0"
   },
   "peerDependencies": {
-    "openclaw-cn": ">=0.2.0"
+    "openclaw": ">=0.2.0"
   },
   "scripts": {
     "install": "bash install.sh",
